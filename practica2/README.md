@@ -43,6 +43,10 @@ Sin embargo, como se aprecia en la gráfica superior, el algoritmo de movimiento
 
 Se intentó llevar a cabo un algoritmo A* lo cual se llevó también bastantes horas, sin embargo decidimos pararlo pues las trazas que obteniamos de resultado ya cumplian las expectativas.
 
+> Para ver todo en detalle las horas y las tareas realizadas por equipo aquí está la [hoja del cálculo][enlace_hoja_calculo] con la que se realizó el seguimineto.
+
+[enlace_hoja_calculo]:(https://drive.google.com/file/d/10wFM0dFd-EudK7P3B8uN3bgf12za7Cgo/view?usp=sharing)
+
 ## Autonomía del agente
 La primera acción del agente es mirar todas las casilla a las cuales se puede mover y no son obstáculo. Después comienza un filtrado quitando aquellas casillas que ya están en la memoria del agente, para evitar que este vuelva sobre sus propios pasos creando bucles.
 
