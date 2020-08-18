@@ -13,26 +13,27 @@ La arquitectura del desarrollo de la práctica estará distribuida entre múltip
 ## Solución implementada
 
 ### Diagrama de clases
-![Diagrama de clases](../img/practica2/diagrama_clases.png)
+<img src="../img/practica2/diagrama_clases.png" alt="Diagrama de clases" width="300" height="250"/>
 
 Sólo hay un agente que se encarga de recibir los sensores. Decidimos diseñarlo así para ahorrarnos la implementación de comunicación entre varios agentes.
+
 ### Diagrama de secuencia
-![Diagrama de secuencia](../img/practica2/diagrama_secuencia.png)
+<img src="../img/practica2/diagrama_secuencia.png" alt="Diagrama de secuencia" width="400" height="500"/>
 
 El vehículo es el que inicia la comunicación, solo hace logout si recibe un CRASHED o BAD_* o si encuentra la solución. En los dos casos recibe todos los mensajes necesarios, el último es la traza que ha realizado el agente.
 
 ### Diagrama de estados
-![Diagrama de estado](../img/practica2/diagrama_estados.png)
+<img src="../img/practica2/diagrama_estados.png" alt="Diagrama de estado" width="500" height="400"/>
 
 El agente se encuentra en un estado inicial desde que solo puede loguearse. Después pasa a escuchar los mensajes de controlador. Desde el estado escuchar puede moverse o rellenar la batería y volver a escuchar o puede ir al estado lougout por encontrar la solución o recibir un mensaje de error.
 
 ## Aspectos importantes del desarrollo
-![Gráfica Burndown](../img/practica2/burndown.png)
+<img src="../img/practica2/burndown.png" alt="Gráfica Burndown" width="550" height="500"/>
 
 En cuanto al desarrollo de la práctica se llevó a cabo ajustándose al burndown planificado. Hubo un parón en mitad del desarrollo pero se suple rápidamente recuperando esas horas en los días venideros.
 
-![Horas netas del equipo](../img/practica2/horas_netas.png)
-![Horas reales del equipo](../img/practica2/hora_reales.png)
+<img src="../img/practica2/horas_netas.png" alt="Horas netas del equipo" width="400" height="300"/>
+<img src="../img/practica2/hora_reales.png" alt="Horas reales del equipo" width="400" height="300"/>
 
 El reparto de las tareas de grupo se llevó a cabo equitativamente.La primera semana se diseñaron los modelos del agente. La Segunda semana programamos un sensor cada miembro del grupo y los probamos en el mapa uno. La siguiente semana corresponde al retraso respecto al burndown, esta semana estuvimos pensando el algoritmo de movimiento. La semana final implementamos el algoritmo de movimiento e hicimos las últimas funciones de manejo de mensajes y de detección de que no existe solución.
 
@@ -54,14 +55,14 @@ Para saber si hay solución, guardamos las posiciones del gps donde el agente ve
 
 El algoritmo es greedy por lo que da lugar a trazas como las siguientes.
 
-![Traza mapa 11](GugelCar/mitraza11_3.png)
+<img src="GugelCar/mitraza11_3.png" alt="Traza mapa 11" width="300" height="300"/>
 
 En este mapa se puede ver que debido a la memoria necesita recorrer casi el círculo entero para resolverlo. Esto es debido a que no puede pisar las casillas de la memoria.
 
-![Traza mapa 2](GugelCar/mitraza2.png)
+<img src="GugelCar/mitraza2.png" alt="Traza mapa 2" width="300" height="300"/>
 
 En el mapa 2 al ser un algoritmo Greedy que siempre va por el óptimo local se puede observar que aunque obtiene un resultado bastante bueno no es el camino más corto.
 
-![Traza mapa 3](GugelCar/mitraza3.png)
+<img src="GugelCar/mitraza3.png" alt="Traza mapa 3" width="300" height="300"/>
 
 Aquí se puede observar como el Greedy obtiene el camino óptimo al no estar el objetivo detrás de obstáculos y recovecos.
