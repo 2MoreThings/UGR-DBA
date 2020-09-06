@@ -44,7 +44,7 @@ En cada iteracion del bucle recibira de Xabier el turno de palabra junto con la 
 
 ## Algoritmo de exploración
 
-El algoritmo de exploración se basa en la heurística “Pulgarcito”. “Pulgarcito”, cada vez que se ejecuta un movimiento por un vehículo, guarda las casillas que ve el agente en un map, junto con una puntuación. Esta puntuación aumenta cada vez que vuelve a pasar el radar por las casillas.La casilla objetivo da el valor -infinito.
+El algoritmo de exploración se basa en la heurística “Pulgarcito”. “Pulgarcito”, cada vez que se ejecuta un movimiento por un vehículo, guarda las casillas que ve el agente en un map, junto con una puntuación. Esta puntuación aumenta cada vez que vuelve a pasar el radar por las casillas. La casilla objetivo da el valor -infinito.
 
 Después, el agente ve en su radar todas las casillas a las que puede pasar y en las que puedes llegar al final del radar en esa dirección y se queda con la que menos puntuación tiene, que es la que más casillas nuevas descubrirá. La idea de que el vehículo vea si puede llegar hasta el final del radar sirve para evitar que los vehículos se peguen a las paredes malgastando energía del mundo.
 
@@ -87,13 +87,15 @@ El coche seria un híbrido entre los dos que, aunque no tan bueno explorando ni 
 
 ## Soluciones
 
-![Mapa 1](XAgents/map1-CONV-nj9apj4g_COCHE_COCHE_MOSCA_CAMION.png)
+<img src="XAgents/map1-CONV-nj9apj4g_COCHE_COCHE_MOSCA_CAMION.png" alt="Mapa 1" width="300" height="300"/>
 
-![Mapa 2](XAgents/map2-CONV-78csvc9q_CAMION_COCHE_MOSCA_COCHE.png)
+<img src="XAgents/map2-CONV-78csvc9q_CAMION_COCHE_MOSCA_COCHE.png" alt="Mapa 2" width="300" height="300"/>
 
-![Mapa 3](XAgents/map3-CONV-7ie2vbx3_MOSCA_CAMION_MOSCA_CAMION.png)
+<img src="XAgents/map3-CONV-7ie2vbx3_MOSCA_CAMION_MOSCA_CAMION.png" alt="Mapa 3" width="300" height="300"/>
 
-![Mapa 4](XAgents/map4-CONV-i72pv7a1_CAMION_CAMION_MOSCA_MOSCA.png)
+<img src="XAgents/map4-CONV-i72pv7a1_CAMION_CAMION_MOSCA_MOSCA.png" alt="Mapa 4" width="300" height="300"/>
 
-![Mapa 5](XAgents/map5-CONV-zb9djyp1_MOSCA_COCHE_CAMION_COCHE.png)
+<img src="XAgents/map5-CONV-zb9djyp1_MOSCA_COCHE_CAMION_COCHE.png" alt="Mapa 5" width="300" height="300"/>
+
+
 
